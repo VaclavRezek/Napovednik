@@ -1,0 +1,104 @@
+﻿using System;
+
+public class Napovednik
+{
+    public static void Main(string[] args)
+    {
+        // toto jsou základní používané datové typy v C# (tedy proměnné)
+        // int ukládá celá čísla
+        int CeleCislo = 1;
+        // double ukládá reálná čísla
+        double RealneCislo = 1.5;
+        // char ukládá jednotlivé znaky, musí být mezi jednoduchými uvozovkami
+        char Pismeno = 'A';
+        // string ukládá textové řetězce (tedy text) musí být mezi dvojitými uvozovkami
+        string Text = "Toto je ukázkový text v C#.";
+        // bool (také boolean) ukládá logické hodnoty, tedy true nebo false
+        bool TrueStatement = true;
+        bool FalseStatement = false;
+        // matemaatické operace prostě používají normální symboly, jako všude +, -, *, /
+        double Vysledek = CeleCislo + RealneCislo; // sčítání
+        // dělení se zbytek, kdy je zobrazen zbytek se nazývá modulo a používá se symbol %
+        int Zbytek = 10 % 3; // výsledek je 1
+        // incrementace a dekrementace, tedy přičtení nebo odečtení jedničky
+        int CisloProIncrementaci = 5;
+        CisloProIncrementaci++; // nyní je CisloProIncrementaci 6
+        int CisloProDekrementaci = 5;
+        CisloProDekrementaci--; // nyní je CisloProDekrementaci 4
+
+        // exstuje pre a post inkrementace a dekrementace
+        // pre inkrementace/dekrementace znamená, že se hodnota změní před použitím
+        // post inkrementace/dekrementace znamená, že se hodnota změní až po použití
+
+        // artimetické zkratky aka složený operátory
+        // +=, -=, *=, /=, %=
+        // zapisováno:
+        // int zkratka = 4;
+        // zkratka += 3; // proměnná "zkratka" je nyní 7 (4 + 3)
+
+        //komparační operátory
+        // ==, !=, <, >, <=, >=
+        // taky jako v normání matice
+
+        // logické operátory
+        // && - and, || - or, ! - not (negace)
+
+        // else && if
+        // existuje i else if
+
+        // switch statement funguje jako více větví if-else if-else
+        int month = 37;
+        string season = "jestli tohle vidíš, tak se něco posralo.";
+        switch (month)
+            {
+                case 12: 
+                case 1:
+                case 2:
+                    season = "Winter";
+                break; // důležitý, jinak to bude pokračovat dál
+
+                case 3:
+                case 4:
+                case 5:
+                    season = "Spring";
+                break;
+
+                case 6:
+                case 7:
+                case 8:
+                    season = "Summer";
+                break;
+
+                case 9:
+                case 10:
+                case 11:
+                    season = "Fall";
+                break;
+
+                default: // pokud nepadne žádný case, provede se default
+                    season = "Debile, blbá hodnta";
+                break;
+            }
+
+
+        /*
+        Výpis hodnot na obrazovku pomocí Console.WriteLine (do konzole)
+        S tím, že pokud vložíme text do uvozovek, vypíše se přesně ten text.
+        Pokud chceme vypsat hodnotu nějaké proměnné, musíme ji zapsat mimo uvozovky.
+        */
+        Console.WriteLine("Ahoj!");
+        Console.WriteLine("Tohle je ukázka pro variable INT: " + CeleCislo);
+        Console.WriteLine("Tohle je ukázka pro variable DOUBLE: " + RealneCislo);
+        Console.WriteLine("Tohle je ukázka pro variable CHAR: " + Pismeno);
+        Console.WriteLine("Tohle je ukázka pro variable STRING: " + Text);
+        Console.WriteLine("Tohle je ukázka pro variable BOOL (true): " + TrueStatement);
+        Console.WriteLine("Tohle je ukázka pro variable BOOL (false): " + FalseStatement);
+        Console.WriteLine("Výsledek sčítání INT + DOUBLE je: " + Vysledek);
+        Console.WriteLine("Zbytek po dělení 10 % 3 je: " + Zbytek);
+        Console.WriteLine("Hodnota po incrementaci je: " + CisloProIncrementaci);
+        Console.WriteLine("Hodnota po dekrementaci je: " + CisloProDekrementaci);
+        Console.WriteLine("Aktuální měsíc je: " + month + ", roční období je: " + season);
+       
+
+    }
+}
