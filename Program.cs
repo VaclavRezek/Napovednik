@@ -113,5 +113,10 @@ public class Napovednik
         Console.WriteLine($"Věk: {age}, Oprávnění: {eligibility}");
         Console.WriteLine($"Skóre: {score}, Známka: {grade}"); // ještě kombinováno s ternárním operátorem
 
+        // čtení inputu od uživatele, fungje to pomocí Console.ReadLine(), ale je to vždy string, takže je potřeba převést na jiný datový typ pokud chceme něco jiného
+        Console.WriteLine("Zadej své jméno:");
+        string userName = Console.ReadLine();
+        Console.WriteLine($"Ahoj, {userName}!");
+
     }
 }
