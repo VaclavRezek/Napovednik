@@ -118,11 +118,19 @@ public class Napovednik
         string userName = Console.ReadLine();
         Console.WriteLine($"Ahoj, {userName}!");
 
-        // Parsování inputu na int
+        // Parsování inputu na int (lze i s double. string, char a ostatními datovými typy)
         Console.WriteLine("Zadej své oblíbené číslo:");
         string favoriteNumberInput = Console.ReadLine();
         int favoriteNumber = int.Parse(favoriteNumberInput);
         Console.WriteLine($"Tvé oblíbené číslo je: {favoriteNumber}");
+
+        // String.Format metoda pro formátování řetězců
+        // například chci, aby to zobrazovalo číslo s dvěma desetinnými místy
+        double pi = 3.14159265359;
+        string formattedPi = String.Format("Hodnota π na dvě desetinná místa je: {0:F2}", pi);
+        Console.WriteLine(formattedPi);
+        //nebo!
+        Console.WriteLine($"Hodnota π na dvě desetinná místa je: {pi:F2} jen je to v kódu napsáno přímo :)");
 
     }
 }
