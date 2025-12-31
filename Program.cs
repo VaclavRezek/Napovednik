@@ -118,5 +118,11 @@ public class Napovednik
         string userName = Console.ReadLine();
         Console.WriteLine($"Ahoj, {userName}!");
 
+        // Parsování inputu na int
+        Console.WriteLine("Zadej své oblíbené číslo:");
+        string favoriteNumberInput = Console.ReadLine();
+        int favoriteNumber = int.Parse(favoriteNumberInput);
+        Console.WriteLine($"Tvé oblíbené číslo je: {favoriteNumber}");
+
     }
 }
