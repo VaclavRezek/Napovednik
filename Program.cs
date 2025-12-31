@@ -81,7 +81,7 @@ public class Napovednik
             }
         // ternary conditional operator
         // zkrácená verze if-else pro přiřazení hodnoty
-        // syntaxe: podmínka ? hodnota pokud true : hodnota pokud false
+        // syntaxe: (podmínka) ? hodnota pokud true : hodnota pokud false
         int age = 20;
         string eligibility = (age >= 18) ? "Můžeš hlasovat." : "Nemůžeš hlasovat.";
         // lze je i nestovat
@@ -109,6 +109,9 @@ public class Napovednik
         Console.WriteLine("Hodnota po dekrementaci je: " + CisloProDekrementaci);
         Console.WriteLine("Aktuální měsíc je: " + month + ", roční období je: " + season);
        
+       // interpolace řetězců pomocí $ což znamená, že můžeme v řetězci používat {} do kterých můžeme vložit proměnné nebo výrazy
+        Console.WriteLine($"Věk: {age}, Oprávnění: {eligibility}");
+        Console.WriteLine($"Skóre: {score}, Známka: {grade}"); // ještě kombinováno s ternárním operátorem
 
     }
 }
