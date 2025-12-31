@@ -16,7 +16,7 @@ public class Napovednik
         // bool (také boolean) ukládá logické hodnoty, tedy true nebo false
         bool TrueStatement = true;
         bool FalseStatement = false;
-        // matemaatické operace prostě používají normální symboly, jako všude +, -, *, /
+        // matematické operace prostě používají normální symboly, jako všude +, -, *, /
         double Vysledek = CeleCislo + RealneCislo; // sčítání
         // dělení se zbytek, kdy je zobrazen zbytek se nazývá modulo a používá se symbol %
         int Zbytek = 10 % 3; // výsledek je 1
@@ -79,7 +79,17 @@ public class Napovednik
                     season = "Debile, blbá hodnta";
                 break;
             }
-
+        // ternary conditional operator
+        // zkrácená verze if-else pro přiřazení hodnoty
+        // syntaxe: podmínka ? hodnota pokud true : hodnota pokud false
+        int age = 20;
+        string eligibility = (age >= 18) ? "Můžeš hlasovat." : "Nemůžeš hlasovat.";
+        // lze je i nestovat
+        int score = 67;
+        string grade = (score >= 90) ? "A" :
+                       (score >= 80) ? "B" :
+                       (score >= 70) ? "C" :
+                       (score >= 60) ? "D" : "F";
 
         /*
         Výpis hodnot na obrazovku pomocí Console.WriteLine (do konzole)
