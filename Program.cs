@@ -161,5 +161,28 @@ public class Napovednik
             Console.WriteLine(sum);
             Console.WriteLine(num);
         } while (sum <= 20);
+
+        // break
+        // používá se k přerušení smyčky nebo switch statementu
+        for (int j = 0; j < 10; j++)
+        {
+            if (j == 5)
+            {
+                Console.WriteLine("Přerušení smyčky na j = 5");
+                break;
+            }
+            Console.WriteLine($"Hodnota j je: {j}");
+        }
+
+        // continue
+        // používá se k přeskočení aktuální iterace smyčky a pokračování
+        for (int k = 0; k < 10; k++)
+        {
+            if (k % 2 != 0)
+            {
+                continue; // přeskočí lichá čísla
+            }
+            Console.WriteLine($"Sudé číslo: {k}");
+        }
     }
 }
