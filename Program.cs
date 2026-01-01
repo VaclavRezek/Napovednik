@@ -138,5 +138,15 @@ public class Napovednik
         {
             Console.WriteLine($"Toto je řádek číslo {i} z for loop.");
         }
+
+        // while loop
+        // syntaxe: while (podmínka) { kód k vykonání }
+        // kód, kde se jedno číslo dělí, dokud není menší neno rovno 3
+        double xy = 67;
+        while (xy >= 3)
+        {
+            xy /= 2;
+        }
+        Console.WriteLine($"Hodnota xy po while loop je: {xy}");
     }
 }
