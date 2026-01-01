@@ -132,5 +132,11 @@ public class Napovednik
         //nebo!
         Console.WriteLine($"Hodnota π na dvě desetinná místa je: {pi:F2} jen je to v kódu napsáno přímo :)");
 
+        // for loop
+        // syntaxe: for (počáteční hodnota; podmínka; inkrementace/dekrementace) { kód k vykonání }
+        for (int i = 0; i < 3; i ++)
+        {
+            Console.WriteLine($"Toto je řádek číslo {i} z for loop.");
+        }
     }
 }
