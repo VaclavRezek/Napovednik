@@ -148,5 +148,18 @@ public class Napovednik
             xy /= 2;
         }
         Console.WriteLine($"Hodnota xy po while loop je: {xy}");
+
+        // do while loop
+        // syntaxe: do { kód k vykonání } while (podmínka);
+        // nejdříve se vykoná kód a pak se zkontroluje podmínka
+        int sum = 0;
+        int num = 1;
+        do
+        {
+            sum += num;
+            num += 2;
+            Console.WriteLine(sum);
+            Console.WriteLine(num);
+        } while (sum <= 20);
     }
 }
