@@ -199,5 +199,24 @@ public class Napovednik
             }
             Console.WriteLine();
         }
+
+        // infinite loop, s tím si moc nehraj, ale jsou užitečné v některých případech
+        /*
+        while (true)
+        {
+            Console.WriteLine("Toto je nekonečná smyčka. Stiskni Ctrl + C pro ukončení.");
+        }
+
+        for ( ; ; )
+        {
+            Console.WriteLine("Toto je také nekonečná smyčka. Stiskni Ctrl + C pro ukončení.");
+        }
+
+        int i = 0;
+        wihle (i < 10)
+        {
+            Console.WriteLine("Toto je nekonečná smyčka kvůli tomu, že i se nikdy nezmění.");
+        }
+        */
     }
 }
