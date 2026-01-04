@@ -47,7 +47,7 @@ public class Napovednik
         // existuje i else if
 
         // switch statement funguje jako více větví if-else if-else
-        int month = 37;
+        int month = 4;
         string season = "jestli tohle vidíš, tak se něco posralo.";
         switch (month)
             {
@@ -183,6 +183,21 @@ public class Napovednik
                 continue; // přeskočí lichá čísla
             }
             Console.WriteLine($"Sudé číslo: {k}");
+        }
+
+        // Nested Loop aka absolutní dogshit
+        Console.WriteLine("Prosím, zadej šířku obdélníku:");
+        int width = int.Parse(Console.ReadLine());
+        Console.WriteLine("Prosím, zadej výšku obdélníku:");
+        int height = int.Parse(Console.ReadLine());
+
+        for (int y = 0; y < height; y++)
+        {
+            for (int x = 0; x < width; x++)
+            {
+                Console.Write("*");
+            }
+            Console.WriteLine();
         }
     }
 }
