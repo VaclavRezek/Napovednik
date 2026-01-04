@@ -218,5 +218,17 @@ public class Napovednik
             Console.WriteLine("Toto je nekonečná smyčka kvůli tomu, že i se nikdy nezmění.");
         }
         */
+
+        // dynamický input
+        int result = 0;
+        Console.WriteLine("Kolik čísel chceš sečíst?");
+        int count = int.Parse(Console.ReadLine());
+        Console.WriteLine($"Zadej {count} čísel:");
+        for (int n = 0; n < count; n++)
+        {
+            int value = int.Parse(Console.ReadLine());
+            result += value;
+        }
+        Console.WriteLine($"Tohle je výsledek: {result}");
     }
 }
