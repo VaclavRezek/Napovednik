@@ -2,6 +2,23 @@
 
 public class Napovednik
 {
+    // Deklarování metody, je to blok kódu, který můžeme pužít opakovaně, jako nějakou konstantu :)
+    public static void SoucetDoTisice()
+    /*
+    public - přístupový modifikátor, znamená, že metoda je dostupná odkudkoliv
+    static - znamená, že metoda patří třídě a ne instanci třídy
+    void - návratový typ, znamená, že metoda nevrací žádnou hodnotu
+    SoucetDoTisice - název metody, který by měl být výstižný a popisovat, co metoda dělá
+    ( ) - závorky pro parametry, v tomto případě metoda nebere žádné parametry
+    */
+    {
+        int res = 0;
+        for (int x = 1; x <= 1000; x++)
+        {
+            res += x;
+        }
+        Console.WriteLine(res);
+    }
     public static void Main(string[] args)
     {
         // toto jsou základní používané datové typy v C# (tedy proměnné)
@@ -230,5 +247,6 @@ public class Napovednik
             result += value;
         }
         Console.WriteLine($"Tohle je výsledek: {result}");
+
     }
 }
