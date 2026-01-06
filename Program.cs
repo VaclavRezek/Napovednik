@@ -18,6 +18,15 @@ public class Napovednik
     void - návratový typ, znamená, že metoda nevrací žádnou hodnotu
     SoucetDoTisice - název metody, který by měl být výstižný a popisovat, co metoda dělá
     ( ) - závorky pro parametry, v tomto případě metoda nebere žádné parametry
+        když bere parametry, jsou uvedeny v závorkách oddělené čárkami
+    */
+    public static void VypisJmeno(string jmeno)
+    {
+        Console.WriteLine("Ahoj, " + jmeno + "!");
+    }
+    // potom v Main motodě můžeme zavolat tyto metody
+    /*
+    VypisJmeno("Petr"); // zavolá metodu a předá jí hodnotu "Petr" jako parametr jmeno
     */
 
     public static void Main(string[] args)
